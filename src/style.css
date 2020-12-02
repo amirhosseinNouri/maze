@@ -1,3 +1,23 @@
 body {
     margin : 0;
 }
+
+.hidden {
+    display: none !important;
+}
+
+.winner h1 {
+    color : #fff;
+    font-size: 100px;
+}
+
+.winner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:  absolute;
+    z-index: 1;
+    height : 100vh;
+    width: 100vw;
+    background-color: rgba(151, 150, 150, 0.4);
+}
