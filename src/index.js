@@ -128,6 +128,7 @@ horizontals.forEach((row, rowIndex) => {
       5,
       {
         isStatic: true,
+        label : 'wall'
       }
     );
     World.add(world, wall);
@@ -145,6 +146,7 @@ verticals.forEach((row, rowIndex) => {
       unitLength,
       {
         isStatic: true,
+        label : 'wall'
       }
     );
 
@@ -205,7 +207,12 @@ Events.on(engine , 'collisionStart' , event =>{
         const labels = ['ball' , 'goal']
 
         if(labels.includes(collision.bodyA.label) &&labels.includes(collision.bodyB.label) ){
-            console.log('user won');
+            world.gravity.y = 1 ;
+            world.bodies.forEach(elem =>{
+                if(elem.label === 'wall')
+                Body.setStatic(elem , false)
+            })
+
         }
     })
 })
