@@ -1,4 +1,4 @@
-# maze
+# Maze
 
 This is an auto generating maze using [matter.js library](https://brm.io/matter-js/).
 
