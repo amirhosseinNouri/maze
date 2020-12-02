@@ -8,5 +8,5 @@ This project is a practice for [udemy The modern javascript Bootcamp Course](htt
 Check out the final result [here](https://maze.amirhosseinnouri.vercel.app/).
 
 
-# How to resize the maz?
+# How to resize the maze?
 You can resize the maze by editing index.js file and change "cellsHorizontal" and "cellsVertical" to any value that you'd like.
